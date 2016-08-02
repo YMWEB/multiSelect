@@ -4,7 +4,6 @@
 		var MultiSelect = function(element,options){
 			this.$element = $(element);
 
-
 		};
 		MultiSelect.prototype = {
 			
@@ -29,10 +28,6 @@
 					})
 
 				})	
-			},
-
-			error:function(){
-				errorMesssage();
 			}
 			
 			}
