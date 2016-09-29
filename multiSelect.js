@@ -37,39 +37,42 @@
 			}
 
 
-	$.fn.multiSelect= function(){
-		var option = arguments[0],
-		args = arguments;	
+	// $.fn.multiSelect= function(){
+	// 	var option = arguments[0],
+	// 	args = arguments;	
 
-			return this.each(function(){
-				var $this = $(this),
-				data = $(this).data('multiselect'),
-				options = $.extend({},$.fn.multiSelect.defaults,$this.data(),typeof option === 'object' && option);
+	// 		return this.each(function(){
+	// 			var multiselect = new MultiSelect();
+	// 			multiselect.init();
+	// 		// 	data = $(this).data('multiselect'),
+	// 		// 	options = $.extend({},$.fn.multiSelect.defaults,$this.data(),typeof option === 'object' && option);
 
-				if(!data){
-					$this.data('multiselect',(data = new MultiSelect(this,options)));
+	// 		// 	if(!data){
+	// 		// 		$this.data('multiselect',(data = new MultiSelect(this,options)));
 					
-				}
+	// 		// 	}
 
-				if(typeof option ==="string"){
-					data[option](arg[1]);
-				}else{
-					data.init();
-				}
-			})
+	// 		// 	if(typeof option ==="string"){
+	// 		// 		data[option](arg[1]);
+	// 		// 	}else{
+	// 		// 		data.init();
+	// 		// 	}
+	// 		// })
 				
-			};
+	// 		// };
 
 
 
-			$.fn.multiSelect.defaults={
+	// 		// $.fn.multiSelect.defaults={
 
-			};
+	// 		// };
 
-			$.fn.errorMesssage = function(){
-				console.log('error!');
+	// 		$.fn.errorMesssage = function(){
+	// 			console.log('error!');
 				
-			};
+	// 		}
+
+	// 	}
 
 
 $(function(){
